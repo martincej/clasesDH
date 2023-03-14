@@ -63,9 +63,16 @@ const banco = {
     return null
   
   },
-
-
 }
 
-console.log(banco.consultarCliente('Jacki Chan'))
-console.log(banco.consultarCliente('Martin Cejas'))
+function consultarCliente(arrayCuentas, titular) {
+  for (let i = 0; i < arrayCuentas.length; i++) {    
+    if (this.clientes[i].titularCuenta === titular) {
+      return this.clientes[i]
+    }
+  }
+  return null
+}
+
+console.log(consultarCliente(arrayCuentas,'Jacki Chan'))
+console.log(consultarCliente(arrayCuentas,'Martin Cejas'))

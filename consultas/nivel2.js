@@ -10,13 +10,13 @@ B  Nivel 2
 6 - Funcion que reciba un array de edades y retorne un objeto literal con dos propiedades que contengan un array
    {
       edadesMenor : "// edades menor a 18",  
-      edadesMayor : "// edades menor a 18"
+      edadesMayor : "// edades mayor a 18"
    }
    
 */
 
 let edades = [10, 9, 8, 22, 55, 80, 5, 63, 29, 9]
-let edades1 = [2, 2]
+let edades1 = [2, 2,5, 6]
 
 
 function promedio(arrayEdades) {
@@ -49,7 +49,7 @@ parImpar('impar'); */
 
 
 
-let numeros = [1, 2, 3, 4, 5, 6]
+/* let numeros = [1, 2, 3, 4, 5, 6]
 
 let numeros2 = [1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6]
 
@@ -72,4 +72,4 @@ function imparesPares(arrayNumeros) {
 
 
 console.log(imparesPares(numeros));
-console.log(imparesPares(numeros2));
+console.log(imparesPares(numeros2)); */
