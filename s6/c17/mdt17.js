@@ -47,6 +47,23 @@ const sumarDiagonal = (matriz) => {
 // console.log(sumarDiagonal(matrizGenerada))
 
 
+/*
+ console.log(matrizGenerada[0][2]);
+console.log(matrizGenerada[1][1]);
+console.log(matrizGenerada[2][0]); 
+*/
+
+
+const sumarDiagonal2 = (matriz) => { 
+    let acc = 0
+    for (let i = 0; i < matriz.length; i++) {
+        console.log(matriz[i][matriz.length - 1 - i]);
+        //acc = acc + matriz[i][matriz.length - 1 - i]
+    }
+    return acc
+}
+
+sumarDiagonal2(matrizGenerada)
 
 
 
