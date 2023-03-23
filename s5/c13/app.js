@@ -4,106 +4,115 @@
 
 const misMascotas = [
     {
-        nombre: "Cachupin",
-        raza: "Akita",
-        edad: 4,
-        sonido: "Guau",
-    },
-    {
-        nombre: "Bobby",
-        raza: "Pichichu",
-        edad: 6,
-        sonido: "Guauguau"
-    },
-    {
-        nombre: "Deasy",
-        raza: "cocker spaniel",
-        edad: 2,
-        sonido: "Grrrr"
-    },
-    {
-        nombre: "Negrito",
-        raza: "peque",
-        edad: 10,
-        sonido: "guaf guaf"
-    },
-    {
-        nombre: "Jhon",
-        raza: "Doberman",
-        edad: 4,
-        sonido: "Roof"
-    },
-    {
         nombre: "Tom",
         raza: "Dogo Argentino",
         edad: 12,
         sonido: "Roof Roof Roof"
-    }
+    },
+    {
+        nombre: "Kai",
+        raza: "Boxer",
+        edad: 10,
+        sonido: "es como una Tetera"
+    },
+    {
+        nombre: "chiquita",
+        raza: "Pincher",
+        edad: 5,
+        sonido: "rrr rrr rrr"
+    },
+    {
+        nombre: "chocolo",
+        raza: "kiltro",
+        edad: 9,
+        sonido: "wuau"
+    },
+    {
+        nombre: "Molly",
+        raza: "Quiltro",
+        edad: 2,
+        sonido: "Guau"
+    },
+    {
+        nombre: 'Rugui',
+        raza: 'Shar Pei',
+        edad: 5,
+        sonido: 'woof'
+    },
+    { nombre: "Ahsoka", raza: "gato", edad: 2, sonido: "Miau" }
 ]
 
 
-console.table(misMascotas);
+// console.table(misMascotas);
 
 /* 
 Deberemos crear una función que se llame aumentarEdad que aumente la edad de cada animal en 1.
 */
 
-function aumentarEdad(arrayMascotas){
-    for (let i = 0; i < arrayMascotas.length; i++) {
-        // arrayMascotas[i].edad++
-        arrayMascotas[i].edad = arrayMascotas[i].edad + 1
+function aumentarEdad(misMascotas) {
+    for (let i = 0; i < misMascotas.length; i++) {
+        misMascotas[i].edad = misMascotas[i].edad + 1;
     }
 }
-
-/* 
-aumentarEdad(misMascotas)
-
-console.log('incrementando edad...');
-
-console.table(misMascotas); */
+console.log('modificando edades...');
+// aumentarEdad(misMascotas2)
+// console.table(misMascotas2);
 
 /* 
 Ahora debemos crear otra función, que se llame  aumentarEdad2, que va a hacer un trabajo más fino:
 ? Si la mascota tiene menos de 6 años, debe aumentar su edad en 1
 ? Si la mascota tiene entre 6 y 10 años, debe aumentar su edad en 2
-? Si la mascota tiene más de 10 años, deberá sumarle la mitad de su edad
 
+?Si la mascota tiene más de 10 años, deberá sumarle la mitad de su edad
 */
 
-function aumentarEdad2(arrayMascotas){
+
+function aumentarEdad2(arrayMascotas) {
     for (let i = 0; i < arrayMascotas.length; i++) {
+       
         if (arrayMascotas[i].edad < 6) {
             arrayMascotas[i].edad = arrayMascotas[i].edad + 1
         }else if (arrayMascotas[i].edad <= 10) {
-            arrayMascotas[i].edad = arrayMascotas[i].edad + 2
+            arrayMascotas[i].edad = arrayMascotas[i].edad + 2;
         }else{
-            arrayMascotas[i].edad = arrayMascotas[i].edad * 1.5
+            arrayMascotas[i].edad = arrayMascotas[i].edad + (arrayMascotas[i].edad / 2);
+        }
+    }
+}
+
+/* aumentarEdad2(misMascotas)
+console.log(misMascotas);
+ */
+
+/* 
+{
+    let nombre = 'Tom'
+    
+    {
+        let nombre = 'Luna'
+
+        {
+            let nombre = 'Negrito'
+            console.log(nombre);
         }
     }
 }
 
 
-/* aumentarEdad2(misMascotas)
+ */
 
-console.log('incrementando edad...');
 
-console.table(misMascotas); */
+
+
+
+
 
 
 /* 
 Ahora crearemos una función que va a generar un identificador (ID) en cada objeto, que será secuencial y que empezará en 1.
 */
 
-function generarID(arrayMascotas){
-    for (let i = 1; i <= arrayMascotas.length; i++) {
-        arrayMascotas[i - 1].id = i
-    }
-}
 
-
-console.log('generando identificadores....');
-generarID(misMascotas)
-console.table(misMascotas);
 
 
 

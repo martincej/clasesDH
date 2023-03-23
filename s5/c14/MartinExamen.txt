@@ -1,0 +1,129 @@
+/* 
+ c14 - INTEGRACION DE CONTENIDO 
+*/
+/* 
+    *a .Obtener en un nuevo array las edades menores a 18.
+    b. Obtener en un nuevo array las edades mayor o igual a 18.
+    c. Obtener en un nuevo array las edades igual a 18.
+    *d. Obtener el menor.
+    c. Obtener el mayor. 
+    *e. Obtener el promedio de edades.
+    f. Incrementar en 1 todas las edades, donde 1 es un parametro.
+    g. encuentre al string y lo retorne.
+
+*/
+
+const edades = [11, 12, 15, 1, 25, 22, 10, -33, 18, 5];
+
+const edadesCorrupto = [11, 12, 15, 18, '25', 22, '10', 33, 18, 5];
+
+function menores(array) {
+    let menoresA18 = []
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] < 18 ) {
+            menoresA18.push(array[i])
+        }
+    }
+    return menoresA18
+}
+
+// console.log(menores(edades));
+
+const edadPromedio = (arrayEdades) => {
+    let sumatoria = 0
+    for (let i = 0; i < arrayEdades.length; i++) {
+        sumatoria = sumatoria + arrayEdades[i]
+    }
+    return sumatoria / arrayEdades.length
+}
+
+// console.log(edadPromedio(edades));
+
+function elMenor(arrayEdades) {
+    let menor = arrayEdades[0]
+    for (let i = 1; i < arrayEdades.length; i++) {
+        if (arrayEdades[i] < menor) {
+            // console.log(arrayEdades[i]);
+            menor = arrayEdades[i]
+        }
+    }
+    return menor
+}
+
+// console.log(elMenor(edades));
+
+
+
+
+
+const arrayCuentas =
+[
+    {
+      titular: "Arlene Barr",
+      estaHabilitada: false,
+      saldo: 3253.40,
+      edadTitular: 33,
+      tipoCuenta: "sueldo"
+    },
+    {
+      titular: "Roslyn Torres",
+      estaHabilitada: false,
+      saldo: 3229.45,
+      edadTitular: 27,
+      tipoCuenta: "sueldo"
+    },
+    {
+      titular: "Cleo Lopez",
+      estaHabilitada: true,
+      saldo: 1360.19,
+      edadTitular: 34,
+      tipoCuenta: "corriente"
+    },
+    {
+      titular: "Daniel Malone",
+      estaHabilitada: true,
+      saldo: 3627.12,
+      edadTitular: 30,
+      tipoCuenta: "sueldo"
+    }
+]
+/* 
+
+*Obtener un nuevo array de cuentas cuyas edadTitular sean menores o igual a 30.
+Obtener un nuevo array de cuentas cuyas edades sean mayor o igual a 30.
+Obtener un nuevo array de cuentas cuyas edades sean menores o igual a 30.
+Obtener la cuenta con el titular de la misma más joven.
+*Obtener un array con las cuentas habilitadas.
+Obtener un array con las cuentas deshabilitadas.
+Obtener la cuenta con el menor saldo.
+Obtener la cuenta con el mayor saldo.
+*/
+
+console.table(arrayCuentas);
+
+function menoresCuentas(array) {
+    let menoresA30 = []
+    
+    for (let i = 0; i < array.length; i++) {
+       
+        if (array[i].edadTitular <= 30 ) {
+            menoresA30.push(array[i])
+        }
+    }
+    return menoresA30
+}
+console.log('*********************');
+// console.table(menoresCuentas(arrayCuentas));
+
+function cuentasHabilitadas(arrayCuentas) {
+    let cuentasHab = []
+    for (let i = 0; i < arrayCuentas.length; i++) {
+        if (arrayCuentas[i].estaHabilitada === true) {
+            cuentasHab.push(arrayCuentas[i])
+        }
+    }
+    return cuentasHab        
+}
+
+// console.table(cuentasHabilitadas(arrayCuentas));
+

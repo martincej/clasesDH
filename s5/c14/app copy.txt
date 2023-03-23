@@ -1,0 +1,110 @@
+/* 
+ c14 - INTEGRACION DE CONTENIDO 
+*/
+/* 
+    *a .Obtener en un nuevo array las edades menores a 18.
+   
+    *b. Obtener en un nuevo array las edades mayor o igual a 18.
+    c. Obtener en un nuevo array las edades igual a 18.
+   
+    *d. Obtener el menor.
+    c. Obtener el mayor. 
+    
+    e. Obtener el promedio de edades.
+
+    *f. Incrementar en x todas las edades, donde x es un parametro.
+
+    f. encuentre al string y lo retorne.
+
+*/
+const edades = [11, 12, 15, 18, 25, 22, 10, 33, 18, 5];
+
+
+/* const edadesMenor = arrayEdades => {
+    let menores = []
+    for (let i = 0; i < arrayEdades.length; i++) {
+        // console.log(arrayEdades[i]);
+        if (arrayEdades[i] < 18) {
+            menores.push(arrayEdades[i])
+        }
+    }
+    return menores
+}
+
+console.log(edadesMenor(edades)) */
+
+function incrementar(arrayEdades, x) {
+    for (let i = 0; i < arrayEdades.length; i++) {
+        arrayEdades[i] = arrayEdades[i] + x
+    }
+}
+
+/* console.table(edadesCorrupto);
+incrementar(edadesCorrupto, 2)
+console.table(edadesCorrupto); */
+
+const edadesCorrupto = [11, 12, 15, 18, '25', 22, '10', 33, 18, 5, true];
+
+
+/* function filtroString(arrayEdades) {
+    let corruptos = []
+    for (let i = 0; i < arrayEdades.length; i++) {
+       if (typeof arrayEdades[i] !== 'number') {
+            // console.log(arrayEdades[i])
+            corruptos.push(arrayEdades[i])
+       }
+    }
+    return corruptos
+} */
+
+// console.log(filtroString(edadesCorrupto));
+
+const arrayCuentas =
+[
+    {
+      titular: "Arlene Barr",
+      estaHabilitada: false,
+      saldo: 3253.40,
+      edadTitular: 33,
+      tipoCuenta: "sueldo"
+    },
+    {
+      titular: "Roslyn Torres",
+      estaHabilitada: false,
+      saldo: 3229.45,
+      edadTitular: 27,
+      tipoCuenta: "sueldo"
+    },
+    {
+      titular: "Cleo Lopez",
+      estaHabilitada: true,
+      saldo: 1360.19,
+      edadTitular: 34,
+      tipoCuenta: "corriente"
+    },
+    {
+      titular: "Daniel Malone",
+      estaHabilitada: true,
+      saldo: 3627.12,
+      edadTitular: 30,
+      tipoCuenta: "sueldo"
+    }
+]
+
+// console.table(arrayCuentas);
+console.log('************');
+/* Obtener un array con las cuentas deshabilitadas. */
+
+function cuentasDeshabilitadas(arrayCuentas) {
+    let arrayDes = []
+    for (let i = 0; i < arrayCuentas.length; i++) {
+        if (!arrayCuentas[i].estaHabilitada)  {
+            // console.log(arrayCuentas[i]);
+            arrayDes.push(arrayCuentas[i])
+        }
+    }
+    return arrayDes;
+}
+
+console.table(cuentasDeshabilitadas(arrayCuentas))
+// console.log(arrayCuentas[0].estaHabilitada);
