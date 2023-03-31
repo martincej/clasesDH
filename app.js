@@ -1,495 +1,58 @@
-let obj = {
-    "165": [
-      {
-        "id": 674,
-        "fecha": "2023-03-07",
-        "vendedor": "165",
-        "nombre_vendedor": "ANDRADA, ABRAHAM RAFAEL",
-        "cliente": "684161",
-        "razon_social": "PEREZ, SERGIO ARMANDO         ",
-        "valor_usado": "0.0",
-        "valor_venta": "4800000.0",
-        "marca": null,
-        "descripcion_marca": "VOLKSWAGEN AMAROK 2.0L TDI",
-        "reserva_id": "30211",
-        "negocio": "FORD USADO",
-        "otros": "0.0",
-        "gastos": "0.0",
-        "comision": "1.0",
-        "estado": "0",
-        "created_at": "2023-03-18 20:38:02.087",
-        "updated_at": "2023-03-18 20:38:02.087"
-      },
-      {
-        "id": 675,
-        "fecha": "2023-03-16",
-        "vendedor": "165",
-        "nombre_vendedor": "ANDRADA, ABRAHAM RAFAEL",
-        "cliente": "581546",
-        "razon_social": "IÑON JORGE PABLO              ",
-        "valor_usado": "0.0",
-        "valor_venta": "2498780.0",
-        "marca": null,
-        "descripcion_marca": "CHEVROLET ONIX 1.4 N LT",
-        "reserva_id": "30220",
-        "negocio": "FORD USADO",
-        "otros": "0.0",
-        "gastos": "0.0",
-        "comision": "1.0",
-        "estado": "0",
-        "created_at": "2023-03-18 20:38:02.313",
-        "updated_at": "2023-03-18 20:38:02.313"
-      },
-      {
-        "id": 676,
-        "fecha": "2023-03-13",
-        "vendedor": "165",
-        "nombre_vendedor": "ANDRADA, ABRAHAM RAFAEL",
-        "cliente": "640358",
-        "razon_social": "OLAYA GUIDET EDUARDO ERNESTO  ",
-        "valor_usado": "0.0",
-        "valor_venta": "11000000.0",
-        "marca": null,
-        "descripcion_marca": "NISSAN FRONTIER X-GEAR 4X4 AT 2.3 D CD",
-        "reserva_id": "10238",
-        "negocio": "NISSAN",
-        "otros": "0.0",
-        "gastos": "0.0",
-        "comision": "1.0",
-        "estado": "0",
-        "created_at": "2023-03-18 20:38:02.630",
-        "updated_at": "2023-03-18 20:38:02.630"
-      }
-    ],
-    "781": [
-      {
-        "id": 670,
-        "fecha": "2023-03-06",
-        "vendedor": "781",
-        "nombre_vendedor": "GIUDICE, PABLO",
-        "cliente": "611677",
-        "razon_social": "LIZARRAGA, NORMA BEATRIZ      ",
-        "valor_usado": "2800000.0",
-        "valor_venta": "7270000.0",
-        "marca": null,
-        "descripcion_marca": "FORD ECOSPORT TITANIUM 1.5L MT N",
-        "reserva_id": "30212",
-        "negocio": "FORD 0KM",
-        "otros": "0.0",
-        "gastos": "0.0",
-        "comision": "1.0",
-        "estado": "0",
-        "created_at": "2023-03-10 16:46:31.007",
-        "updated_at": "2023-03-10 16:46:31.007"
-      },
-      {
-        "id": 671,
-        "fecha": "2023-03-07",
-        "vendedor": "781",
-        "nombre_vendedor": "GIUDICE, PABLO",
-        "cliente": "684265",
-        "razon_social": "SAIFAN, GLADYS BEATRIZ        ",
-        "valor_usado": "0.0",
-        "valor_venta": "9500000.0",
-        "marca": null,
-        "descripcion_marca": "FORD RANGER DC 4X2 XLT 2.5L N",
-        "reserva_id": "30164",
-        "negocio": "FORD 0KM",
-        "otros": "0.0",
-        "gastos": "0.0",
-        "comision": "1.0",
-        "estado": "0",
-        "created_at": "2023-03-10 16:46:31.013",
-        "updated_at": "2023-03-10 16:46:31.013"
-      },
-      {
-        "id": 672,
-        "fecha": "2023-03-07",
-        "vendedor": "781",
-        "nombre_vendedor": "GIUDICE, PABLO",
-        "cliente": "620550",
-        "razon_social": "MASINO, DANIEL ALBERTO        ",
-        "valor_usado": "3300000.0",
-        "valor_venta": "9500000.0",
-        "marca": null,
-        "descripcion_marca": "FORD RANGER DC 4X2 XL 2.2L D",
-        "reserva_id": "30208",
-        "negocio": "FORD 0KM",
-        "otros": "0.0",
-        "gastos": "0.0",
-        "comision": "1.0",
-        "estado": "0",
-        "created_at": "2023-03-10 16:46:31.017",
-        "updated_at": "2023-03-10 16:46:31.017"
-      },
-      {
-        "id": 673,
-        "fecha": "2023-03-07",
-        "vendedor": "781",
-        "nombre_vendedor": "GIUDICE, PABLO",
-        "cliente": "630556",
-        "razon_social": "N.S.C. CONSTRUCTION SRL       ",
-        "valor_usado": "0.0",
-        "valor_venta": "3750000.0",
-        "marca": null,
-        "descripcion_marca": "NISSAN SENTRA ADVANCE PURE DRIVE SAFETY ",
-        "reserva_id": "10224",
-        "negocio": "NISSAN USADO",
-        "otros": "0.0",
-        "gastos": "0.0",
-        "comision": "1.0",
-        "estado": "0",
-        "created_at": "2023-03-10 16:46:31.020",
-        "updated_at": "2023-03-10 16:46:31.020"
-      }
-    ],
-    "1204": [
-      {
-        "id": 677,
-        "fecha": "2023-03-01",
-        "vendedor": "1204",
-        "nombre_vendedor": "LEVY, MARCOS GABRIEL",
-        "cliente": "684266",
-        "razon_social": "SAMJIN INDUSTRIAL S.A.        ",
-        "valor_usado": "0.0",
-        "valor_venta": "10500000.0",
-        "marca": null,
-        "descripcion_marca": "FORD RANGER DC 4X4 XL 2.2L D",
-        "reserva_id": "30165",
-        "negocio": "FORD 0KM",
-        "otros": "0.0",
-        "gastos": "0.0",
-        "comision": "1.0",
-        "estado": "0",
-        "created_at": "2023-03-18 21:02:22.663",
-        "updated_at": "2023-03-18 21:02:22.663"
-      },
-      {
-        "id": 678,
-        "fecha": "2023-03-01",
-        "vendedor": "1204",
-        "nombre_vendedor": "LEVY, MARCOS GABRIEL",
-        "cliente": "684266",
-        "razon_social": "SAMJIN INDUSTRIAL S.A.        ",
-        "valor_usado": "0.0",
-        "valor_venta": "10500000.0",
-        "marca": null,
-        "descripcion_marca": "FORD RANGER DC 4X4 XL 2.2L D",
-        "reserva_id": "30166",
-        "negocio": "FORD 0KM",
-        "otros": "0.0",
-        "gastos": "0.0",
-        "comision": "1.0",
-        "estado": "0",
-        "created_at": "2023-03-18 21:02:22.860",
-        "updated_at": "2023-03-18 21:02:22.860"
-      },
-      {
-        "id": 679,
-        "fecha": "2023-03-01",
-        "vendedor": "1204",
-        "nombre_vendedor": "LEVY, MARCOS GABRIEL",
-        "cliente": "684266",
-        "razon_social": "SAMJIN INDUSTRIAL S.A.        ",
-        "valor_usado": "0.0",
-        "valor_venta": "12200000.0",
-        "marca": null,
-        "descripcion_marca": "FORD RANGER DC 4X4 XLT AT 3.2L D",
-        "reserva_id": "30167",
-        "negocio": "FORD 0KM",
-        "otros": "0.0",
-        "gastos": "0.0",
-        "comision": "1.0",
-        "estado": "0",
-        "created_at": "2023-03-18 21:02:23.047",
-        "updated_at": "2023-03-18 21:02:23.047"
-      },
-      {
-        "id": 680,
-        "fecha": "2023-03-01",
-        "vendedor": "1204",
-        "nombre_vendedor": "LEVY, MARCOS GABRIEL",
-        "cliente": "712438",
-        "razon_social": "VALOR, WALTER ARIEL           ",
-        "valor_usado": "0.0",
-        "valor_venta": "10900000.0",
-        "marca": null,
-        "descripcion_marca": "FORD NUEVA RANGER DC 4X4 LTD AT 3.2L D",
-        "reserva_id": "30035",
-        "negocio": "FORD 0KM",
-        "otros": "0.0",
-        "gastos": "0.0",
-        "comision": "1.0",
-        "estado": "0",
-        "created_at": "2023-03-18 21:02:23.227",
-        "updated_at": "2023-03-18 21:02:23.227"
-      },
-      {
-        "id": 681,
-        "fecha": "2023-03-01",
-        "vendedor": "1204",
-        "nombre_vendedor": "LEVY, MARCOS GABRIEL",
-        "cliente": "684266",
-        "razon_social": "SAMJIN INDUSTRIAL S.A.        ",
-        "valor_usado": "0.0",
-        "valor_venta": "10500000.0",
-        "marca": null,
-        "descripcion_marca": "FORD RANGER DC 4X4 XL 2.2L D",
-        "reserva_id": "30158",
-        "negocio": "FORD 0KM",
-        "otros": "0.0",
-        "gastos": "0.0",
-        "comision": "1.0",
-        "estado": "0",
-        "created_at": "2023-03-18 21:02:23.400",
-        "updated_at": "2023-03-18 21:02:23.400"
-      },
-      {
-        "id": 682,
-        "fecha": "2023-03-10",
-        "vendedor": "1204",
-        "nombre_vendedor": "LEVY, MARCOS GABRIEL",
-        "cliente": "684266",
-        "razon_social": "SAMJIN INDUSTRIAL S.A.        ",
-        "valor_usado": "0.0",
-        "valor_venta": "11850000.0",
-        "marca": null,
-        "descripcion_marca": "FORD RANGER DC 4X4 XLS MT 3.2L D",
-        "reserva_id": "30214",
-        "negocio": "FORD 0KM",
-        "otros": "0.0",
-        "gastos": "0.0",
-        "comision": "1.0",
-        "estado": "0",
-        "created_at": "2023-03-18 21:02:23.573",
-        "updated_at": "2023-03-18 21:02:23.573"
-      },
-      {
-        "id": 683,
-        "fecha": "2023-03-13",
-        "vendedor": "1204",
-        "nombre_vendedor": "LEVY, MARCOS GABRIEL",
-        "cliente": "630558",
-        "razon_social": "NAPADENSKY, RAUL OSVALDO      ",
-        "valor_usado": "0.0",
-        "valor_venta": "11500000.0",
-        "marca": null,
-        "descripcion_marca": "FORD TERRITORY TITANIUM 1.5L GTDI 4X2 AT",
-        "reserva_id": "30142",
-        "negocio": "FORD 0KM",
-        "otros": "0.0",
-        "gastos": "0.0",
-        "comision": "1.0",
-        "estado": "0",
-        "created_at": "2023-03-18 21:02:23.753",
-        "updated_at": "2023-03-18 21:02:23.753"
-      },
-      {
-        "id": 684,
-        "fecha": "2023-03-14",
-        "vendedor": "1204",
-        "nombre_vendedor": "LEVY, MARCOS GABRIEL",
-        "cliente": "653299",
-        "razon_social": "PARRA, ALBERTO AGUSTIN        ",
-        "valor_usado": "0.0",
-        "valor_venta": "12000000.0",
-        "marca": null,
-        "descripcion_marca": "FORD NUEVA RANGER DC 4X4 LTD AT 3.2L D",
-        "reserva_id": "30198",
-        "negocio": "FORD 0KM",
-        "otros": "0.0",
-        "gastos": "0.0",
-        "comision": "1.0",
-        "estado": "0",
-        "created_at": "2023-03-18 21:02:23.937",
-        "updated_at": "2023-03-18 21:02:23.937"
-      },
-      {
-        "id": 685,
-        "fecha": "2023-03-16",
-        "vendedor": "1204",
-        "nombre_vendedor": "LEVY, MARCOS GABRIEL",
-        "cliente": "610206",
-        "razon_social": "VALOR, CARLOS ALBERTO         ",
-        "valor_usado": "0.0",
-        "valor_venta": "8000000.0",
-        "marca": null,
-        "descripcion_marca": "FORD NUEVA RANGER CS 4X4 XL 2.2L D",
-        "reserva_id": "30148",
-        "negocio": "FORD 0KM",
-        "otros": "0.0",
-        "gastos": "0.0",
-        "comision": "1.0",
-        "estado": "0",
-        "created_at": "2023-03-18 21:02:24.113",
-        "updated_at": "2023-03-18 21:02:24.113"
-      },
-      {
-        "id": 686,
-        "fecha": "2023-03-16",
-        "vendedor": "1204",
-        "nombre_vendedor": "LEVY, MARCOS GABRIEL",
-        "cliente": "625220",
-        "razon_social": "MARTEL, GIMENA                ",
-        "valor_usado": "0.0",
-        "valor_venta": "11000000.0",
-        "marca": null,
-        "descripcion_marca": "FORD TERRITORY TITANIUM 1.5L GTDI 4X2 AT",
-        "reserva_id": "30221",
-        "negocio": "FORD 0KM",
-        "otros": "0.0",
-        "gastos": "0.0",
-        "comision": "1.0",
-        "estado": "0",
-        "created_at": "2023-03-18 21:02:24.287",
-        "updated_at": "2023-03-18 21:02:24.287"
-      }
-    ],
-    "4005": [
-      {
-        "id": 669,
-        "fecha": "2023-03-01",
-        "vendedor": "4005",
-        "nombre_vendedor": "FIGUEROA ROBERTO ALEJANDRO",
-        "cliente": "552230",
-        "razon_social": "FOCHE, MARCELO JORGE          ",
-        "valor_usado": "0.0",
-        "valor_venta": "32700000.0",
-        "marca": null,
-        "descripcion_marca": "FORD F-150 RAPTOR 3.5L V6 ECOBOOST 4X4 A",
-        "reserva_id": "30173",
-        "negocio": "FORD 0KM",
-        "otros": "0.0",
-        "gastos": "0.0",
-        "comision": "1.0",
-        "estado": "0",
-        "created_at": "2023-03-10 12:37:44.847",
-        "updated_at": "2023-03-10 12:37:44.847"
-      }
-    ],
-    "300004": [
-      {
-        "id": 663,
-        "fecha": "2023-03-01",
-        "vendedor": "300004",
-        "nombre_vendedor": "ANCE, FATIMA BEATRIZ",
-        "cliente": "684131",
-        "razon_social": "SILVESTRI, TERESA MABEL       ",
-        "valor_usado": "0.0",
-        "valor_venta": "9000000.0",
-        "marca": null,
-        "descripcion_marca": "FORD TRANSIT 2.2L 350M TE",
-        "reserva_id": "30168",
-        "negocio": "FORD 0KM",
-        "otros": "0.0",
-        "gastos": "0.0",
-        "comision": "1.0",
-        "estado": "0",
-        "created_at": "2023-03-10 12:19:46.243",
-        "updated_at": "2023-03-10 12:21:28.607"
-      },
-      {
-        "id": 664,
-        "fecha": "2023-03-01",
-        "vendedor": "300004",
-        "nombre_vendedor": "ANCE, FATIMA BEATRIZ",
-        "cliente": "674176",
-        "razon_social": "RASO, OSVALDO FRANCISCO       ",
-        "valor_usado": "0.0",
-        "valor_venta": "13290000.0",
-        "marca": null,
-        "descripcion_marca": "FORD NUEVA RANGER DC 4X4 LTD AT 3.2L D",
-        "reserva_id": "30169",
-        "negocio": "FORD 0KM",
-        "otros": "0.0",
-        "gastos": "0.0",
-        "comision": "1.0",
-        "estado": "0",
-        "created_at": "2023-03-10 12:19:46.257",
-        "updated_at": "2023-03-10 12:19:46.257"
-      },
-      {
-        "id": 665,
-        "fecha": "2023-03-07",
-        "vendedor": "300004",
-        "nombre_vendedor": "ANCE, FATIMA BEATRIZ",
-        "cliente": "555170",
-        "razon_social": "LOPEZ HERRERA MARIO ALBERTO   ",
-        "valor_usado": "0.0",
-        "valor_venta": "13400000.0",
-        "marca": null,
-        "descripcion_marca": "FORD TERRITORY TITANIUM 1.5L GTDI 4X2 AT",
-        "reserva_id": "30182",
-        "negocio": "FORD 0KM",
-        "otros": "0.0",
-        "gastos": "0.0",
-        "comision": "1.0",
-        "estado": "0",
-        "created_at": "2023-03-10 12:19:46.260",
-        "updated_at": "2023-03-10 12:19:46.260"
-      },
-      {
-        "id": 666,
-        "fecha": "2023-03-07",
-        "vendedor": "300004",
-        "nombre_vendedor": "ANCE, FATIMA BEATRIZ",
-        "cliente": "58522",
-        "razon_social": "QUIROGA, DIEGO ABEL           ",
-        "valor_usado": "0.0",
-        "valor_venta": "13290000.0",
-        "marca": null,
-        "descripcion_marca": "FORD NUEVA RANGER DC 4X4 LTD AT 3.2L D",
-        "reserva_id": "30185",
-        "negocio": "FORD 0KM",
-        "otros": "0.0",
-        "gastos": "0.0",
-        "comision": "1.0",
-        "estado": "0",
-        "created_at": "2023-03-10 12:19:46.263",
-        "updated_at": "2023-03-10 12:19:46.263"
-      },
-      {
-        "id": 667,
-        "fecha": "2023-03-07",
-        "vendedor": "300004",
-        "nombre_vendedor": "ANCE, FATIMA BEATRIZ",
-        "cliente": "552232",
-        "razon_social": "FAGALDE, CAROLINA RUTH        ",
-        "valor_usado": "0.0",
-        "valor_venta": "13290000.0",
-        "marca": null,
-        "descripcion_marca": "FORD NUEVA RANGER DC 4X4 LTD AT 3.2L D",
-        "reserva_id": "30209",
-        "negocio": "FORD 0KM",
-        "otros": "0.0",
-        "gastos": "0.0",
-        "comision": "1.0",
-        "estado": "0",
-        "created_at": "2023-03-10 12:19:46.267",
-        "updated_at": "2023-03-10 12:19:46.267"
-      },
-      {
-        "id": 668,
-        "fecha": "2023-03-07",
-        "vendedor": "300004",
-        "nombre_vendedor": "ANCE, FATIMA BEATRIZ",
-        "cliente": "653301",
-        "razon_social": "PRATS SERGIO GERMAN Y  PRATS M",
-        "valor_usado": "0.0",
-        "valor_venta": "9000000.0",
-        "marca": null,
-        "descripcion_marca": "FORD TERRITORY TREND 1.5L GTDI 4X2 AT",
-        "reserva_id": "30210",
-        "negocio": "FORD 0KM",
-        "otros": "0.0",
-        "gastos": "0.0",
-        "comision": "1.0",
-        "estado": "0",
-        "created_at": "2023-03-10 12:19:46.270",
-        "updated_at": "2023-03-10 12:19:46.270"
-      }
-    ]
-  }
-console.log(Object.keys(obj));
-console.log(obj['1656']);
 
+Alan Muñoz
+Angel Salazar
+Astrid Andreina Hidalgo Martínez
+Bastian Gonzalo Ignacio Poo Martinez
+Belen Rubilar
+Benjamín Pérez
+Camila Robles
+Camilo Alarcón
+Carolina Ulloa
+Claudia Noguera
+Claudio Caicedo
+Daniela Paz Paz Bernales
+danny schaaf
+Di Guerrero
+Diego Arredondo Arce
+Diego Nalli
+Dino Castro
+Eduardo Jose Morles Correa
+Enzo devoto
+Fabian Mardones
+Facundo Pizarro
+Gabriel Rodriguez
+Gimenez Klobuchar Yamil Maximiliano
+Hugo Ubilla
+Ignacio André Veloso Pizarro
+Javier Cifuentes
+Jhonattan Daniel Llerena
+Johali Navarro
+Jose Triviño
+Joseily Villalobos
+Joseryn Caraballo
+Karin Escobar
+Leidy Madrid
+LUIGUI TOMAS PAREDES CORDERO
+Luis García
+Luis Hernandez
+Manuel Herrera
+Marcelo Marchant Gangas
+Matias Valladares
+Maximo Ferreyra
+Monserrat Guzman
+Natalia Tihare Kohen Herrera
+Nicolás Mora
+Oliver Bustamante
+Pablo Alzamora
+Pablo Utreras Urrutia
+Paula Gallardo
+Ricardo Castillo
+Rodrigo Villanueva
+Romy Valderas
+Ruben Gonzalez
+Sebastian Moyano Santelices
+Uri Gleiser
+Valeska Rosales
+Vanessa Bernal Gallego
+Vicente Espinoza
+Victor Javier Vivas
